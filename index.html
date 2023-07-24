@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Color Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="gradient-box"></div>
+      <div class="row options">
+        <div class="column direction">
+          <p>Direction</p>
+          <div class="select-box">
+            <select>
+              <option value="to top">Top</option>
+              <option value="to right top">Right Top</option>
+              <option value="to right">Right</option>
+              <option value="to right bottom">Right Bottom</option>
+              <option value="to bottom">Bottom</option>
+              <option value="to left bottom">Left Bottom</option>
+              <option value="to left">Left</option>
+              <option value="to left top" selected>Left Top</option>
+            </select>
+          </div>
+        </div>
+        <div class="column colors">
+          <p>Colors</p>
+          <div class="inputs">
+            <input id="color1" type="color" value="" />
+            <input id="color2" type="color" value="" />
+          </div>
+        </div>
+      </div>
+      <textarea class="row" disabled></textarea>
+      <div class="row buttons">
+        <button class="refresh">Refresh Colors</button>
+        <button class="copy">Copy Code</button>
+      </div>
+    </div>
+  </body>
+</html>
